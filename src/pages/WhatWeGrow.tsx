@@ -46,7 +46,7 @@ const growCardDetails: GrowCardProps[] = [
 
 const GrowCard = function (props: GrowCardProps) {
     return (<>
-        <Card className={'h-100'} style={{width: 'calc(75vw / 2)'}}>
+        <Card className={'h-100'}>
             {props.img === undefined ? null : <Card.Img variant="top" src={props.img}/>}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>

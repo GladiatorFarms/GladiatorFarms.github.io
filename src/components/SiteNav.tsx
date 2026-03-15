@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 function SiteNav() {
     return (
         <>
-            <Navbar bg="light" data-bs-theme="light" fixed="top">
+            <Navbar collapseOnSelect expand="lg" bg="light" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
@@ -14,12 +14,15 @@ function SiteNav() {
                             className="d-inline-block align-top"
                         />{' '}
                         Gladiator Farms</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#what-we-grow">What we Grow</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
-                    </Nav>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#what-we-grow">What we Grow</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="#contact">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>
