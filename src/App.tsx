@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home.tsx';
 import './App.css';
 import SiteNav from "./components/SiteNav.tsx";
-import About from "./pages/About.tsx";
+import WhatWeGrow from "./pages/WhatWeGrow.tsx";
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/home" element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
+                        <Route path="/what-we-grow" element={<WhatWeGrow/>}/>
                     </Routes>
                 </main>
             </HashRouter>
