@@ -3,7 +3,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(75%);
+    filter: grayscale(85%);
 }
 
 .home-bg-overlay {

@@ -8,7 +8,7 @@ function SiteNav() {
                     <Navbar.Brand href="#home">
                         <img
                             alt=""
-                            src="/gladiator-farms.jpeg"
+                            src="/gladiator-farms-mini.png"
                             width="30"
                             height="30"
                             className="d-inline-block align-top"
