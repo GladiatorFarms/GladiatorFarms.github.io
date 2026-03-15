@@ -1,6 +1,8 @@
 .home-bg {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .home-bg-container {
@@ -22,4 +24,8 @@
 .page-body {
     padding-top: 1rem;
     padding-bottom: 4rem;
+}
+
+body {
+  padding-top: 56px;
 }

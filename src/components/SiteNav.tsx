@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 function SiteNav() {
     return (
         <>
-            <Navbar bg="light" data-bs-theme="light">
+            <Navbar bg="light" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
