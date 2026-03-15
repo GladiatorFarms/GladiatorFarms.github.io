@@ -1,8 +1,9 @@
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 type GrowCardProps = {
     name: string,
     description?: string,
+    img?: string
 };
 
 
@@ -13,33 +14,39 @@ const growCardDetails: GrowCardProps[] = [
     {
         name: "White Zucchini",
         description: "Our specialty variety of Lebanese white zucchini is field grown in early spring.",
+        img: "what-we-grow/zucchini.jpeg",
     },
     {
         name: "Eggplant",
         description: "We grow eggplants throughout the growing season to meet our customer's needs. Grown to complement our white zucchini and Lebanese cucumbers.",
+        img: "what-we-grow/eggplant.jpeg",
     },
     {
         name: "Tomatoes",
         description: "Backed by popular demand we offer Roma, Beefsteak, and Cherry tomatoes.",
+        img: "what-we-grow/tomatoes.jpeg",
     },
     {
         name: "Sweet Bell Peppers",
         description: "Another staple crop we offer to our customers. Grown locally to offer maximum sweetness.",
+        img: "what-we-grow/bellpepper.jpeg",
     },
     {
         name: "Cucumbers",
         description: "Lebanese variety cucumbers complement our eggplant and white zucchini as staples for our customers.",
+        img: "what-we-grow/cucumbers.jpeg",
     },
     {
         name: "Garlic",
         description: "A specialty crop we are implementing in our 2026 growing season to meet growing regional demand.",
+        img: "what-we-grow/garlic.jpeg",
     },
 ];
 
 const GrowCard = function (props: GrowCardProps) {
     return (<>
-        <Card style={{width: '18rem'}}>
-            {/*<Card.Img variant="top" src=""/>*/}
+        <Card style={{width: 'calc(75vw / 2)'}}>
+            {props.img === undefined ? null : <Card.Img variant="top" src={props.img}/>}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text>
@@ -52,14 +59,16 @@ const GrowCard = function (props: GrowCardProps) {
 
 function WhatWeGrow() {
     return (<>
-        <h1>What we Grow</h1>
-        <Row xs={1} md={2} className="g-4">
-            {growCardDetails.map((p, idx) => (
-                <Col key={idx}>
-                    <GrowCard name={p.name} description={p.description}/>
-                </Col>
-            ))}
-        </Row>
+        <Container>
+            <h1>What we Grow</h1>
+            <Row xs={1} md={2} className="g-4">
+                {growCardDetails.map((p, idx) => (
+                    <Col key={idx}>
+                        <GrowCard name={p.name} description={p.description} img={p.img}/>
+                    </Col>
+                ))}
+            </Row>
+        </Container>
     </>);
 }
 

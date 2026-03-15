@@ -1,0 +1,14 @@
+.home-bg {
+    width: 100%;
+    height: auto;
+}
+
+.home-bg-container {
+    height: calc(100vh - 56px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.address-line {
+    margin-bottom: 0;
+}

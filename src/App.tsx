@@ -3,6 +3,7 @@ import Home from './pages/Home.tsx';
 import './App.css';
 import SiteNav from "./components/SiteNav.tsx";
 import WhatWeGrow from "./pages/WhatWeGrow.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                         <Route path="/what-we-grow" element={<WhatWeGrow/>}/>
                     </Routes>
                 </main>
+                <Footer/>
             </HashRouter>
         </>
     )
