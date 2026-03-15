@@ -8,9 +8,9 @@
 
 .home-bg-overlay {
     width: auto;
-    height: 50%;
+    height: 40%;
     position: absolute;
-    top: 30vh;
+    top: 15vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -35,6 +35,10 @@
 .page-body {
     padding-top: 1rem;
     padding-bottom: 4rem;
+}
+
+.page-container {
+    min-height: calc(100vh - 62px);
 }
 
 body {

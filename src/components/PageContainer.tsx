@@ -8,7 +8,7 @@ type PageContainerProps = {
 
 const PageContainer = (props: PageContainerProps) => {
     return (<>
-        <Container>
+        <Container className={'page-container'}>
             <h1 className={'page-title'}>{props.title}</h1>
             <div className={'page-body'}>
                 {props.children}
