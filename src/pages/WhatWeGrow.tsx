@@ -1,4 +1,5 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
+import PageContainer from "../components/PageContainer.tsx";
 
 type GrowCardProps = {
     name: string,
@@ -45,7 +46,7 @@ const growCardDetails: GrowCardProps[] = [
 
 const GrowCard = function (props: GrowCardProps) {
     return (<>
-        <Card style={{width: 'calc(75vw / 2)'}}>
+        <Card className={'h-100'} style={{width: 'calc(75vw / 2)'}}>
             {props.img === undefined ? null : <Card.Img variant="top" src={props.img}/>}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
@@ -59,8 +60,7 @@ const GrowCard = function (props: GrowCardProps) {
 
 function WhatWeGrow() {
     return (<>
-        <Container>
-            <h1>What we Grow</h1>
+        <PageContainer title={'What we Grow'}>
             <Row xs={1} md={2} className="g-4">
                 {growCardDetails.map((p, idx) => (
                     <Col key={idx}>
@@ -68,7 +68,7 @@ function WhatWeGrow() {
                     </Col>
                 ))}
             </Row>
-        </Container>
+        </PageContainer>
     </>);
 }
 

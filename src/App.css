@@ -12,3 +12,14 @@
 .address-line {
     margin-bottom: 0;
 }
+
+.page-title {
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.page-body {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}

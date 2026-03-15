@@ -8,13 +8,13 @@ const Footer = () => {
         <footer className="bg-dark text-bg-dark ext-center text-lg-start mt-auto">
             <Container className="p-4">
                 <Row>
-                    <Col lg={3} md={6} className="mb-4 mb-md-0">
+                    <Col className="mb-4 mb-md-0">
                         <h5 className="text-uppercase">Gladiator Farms</h5>
                         <p>
                             Innovative agriculture in Canada.
                         </p>
                     </Col>
-                    <Col lg={3} md={6} className="mb-4 mb-md-0">
+                    <Col className="mb-4 mb-md-0">
                         <div>
                             <p className={'address-line'}>14255283 CANADA CORPORATION</p>
                             <p className={'address-line'}>4825 ON-138</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                             <p className={'address-line'}>Canada</p>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} className="mb-4 mb-md-0">
+                    <Col className="mb-4 mb-md-0">
                         <h5 className="text-uppercase">Links</h5>
                         <ul className="list-unstyled mb-0">
                             <li>
