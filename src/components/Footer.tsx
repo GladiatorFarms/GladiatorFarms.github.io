@@ -15,6 +15,7 @@ const Footer = () => {
                         </p>
                     </Col>
                     <Col className="mb-4 mb-md-0">
+                        <h5 className="text-uppercase">Headquarters</h5>
                         <div>
                             <p className={'address-line'}>14255283 CANADA CORPORATION</p>
                             <p className={'address-line'}>4825 ON-138</p>
