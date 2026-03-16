@@ -33,12 +33,23 @@
 }
 
 .page-body {
-    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
 .page-container {
     min-height: calc(100vh - 62px);
+}
+
+.about-carousel {
+    height: 60vh;
+    overflow: hidden;
+}
+
+.about-carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 body {
