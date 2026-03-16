@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { CCircle, Instagram } from "react-bootstrap-icons";
+import { CCircle, Envelope, Instagram } from "react-bootstrap-icons";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear(); // Using JavaScript for current year
@@ -30,6 +30,10 @@ const Footer = () => {
                             <li>
                                 <a href="https://www.instagram.com/gladiatorfarms/"
                                    className="link-light"><Instagram/>&nbsp;Instagram</a>
+                            </li>
+                            <li>
+                                <a href="mailto:gladiatorfarms@protonmail.me"
+                                   className="link-light"><Envelope/>&nbsp;Email</a>
                             </li>
                         </ul>
                     </Col>

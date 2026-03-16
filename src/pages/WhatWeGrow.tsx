@@ -60,7 +60,7 @@ const GrowCard = function (props: GrowCardProps) {
 
 function WhatWeGrow() {
     return (<>
-        <PageContainer title={'What we Grow'}>
+        <PageContainer title={'Our Produce'}>
             <Row xs={1} md={2} className="g-4">
                 {growCardDetails.map((p, idx) => (
                     <Col key={idx}>
