@@ -42,6 +42,21 @@ const growCardDetails: GrowCardProps[] = [
         description: "A specialty crop we are implementing in our 2026 growing season to meet growing regional demand.",
         img: "what-we-grow/garlic.jpeg",
     },
+    {
+        name: "Strawberries",
+        description: "We are adding to our lineup year-round strawberry production. A popular berry eaten fresh, dipped in chocolate (as a dessert!), or baked in pies, strawberries are always a hit and even better when they are local!",
+        img: "what-we-grow/strawberry.jpeg",
+    },
+    {
+        name: "Purslane",
+        description: "A key ingredient in fattoush and green tomatillo salsa, this plant is a superfood that will elevate your salads with nutrients and flavour.",
+        img: "what-we-grow/purslane.jpeg",
+    },
+    {
+        name: "Pole Beans",
+        description: "Our sweet pole beans are a popular snack ready to eat fresh, or cooked. A roadstand favourite!",
+        img: "what-we-grow/greenflatbean.jpeg",
+    }
 ];
 
 const GrowCard = function (props: GrowCardProps) {
